@@ -1,0 +1,102 @@
+:root {
+  --bg: #0C2D48;
+  --bg-card: #1d405d;
+  --font-color: #B1D4E0;
+  --btn-color: #145DA0;
+  --header-color: #2E8BC0;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Verdana", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  background-color: var(--bg-card);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.flex-container, .img-container > img, .title {
+  border-radius: 1rem;
+}
+
+
+.img-container > img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.img-container {
+  max-width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.title {
+  height: 5rem;
+  background-color: var(--bg);
+  font-size: 1.3rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  color: white;
+}
+
+.bottom-form, .info {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  padding: .3em;;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.bottom-form {
+  max-width: 100%;
+}
+
+.bottom-form > a {
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#btn {
+  font-size: 1rem;
+  padding: .5rem;
+  font-weight: 900;
+  color: white;
+  background-color: var(--btn-color);
+}
+
+@media (max-width: 750px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
